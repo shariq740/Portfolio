@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./img/person-badge.svg">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaq.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">MOHD SHARIQ</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">MOHD SHARIQ</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./img/profpic.png" alt="MOHD SHARIQ profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I Am</p>
+        <h1 class="title">MOHD SHARIQ</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./RESUME_MOHD_SHARIQ.pdf')">Download Resume
+          </button>
+          
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./img/liinkdin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mohd-shariq74/'"
+          />
+          <img
+            src="./img/github-mark.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/shariq740'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./img/WhatsApp Image 2023-10-02 at 05.28.39_dc1f15ab.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./img/award.svg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>A year+  <br />Frontend Development/Frontend Web-Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./img/book-half.svg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Of Engeneering<br />Computer Science Engeneering <br> (General)</p>
+            </div>
+          </div>
+          <div class="text-container"></div>
+        </div>
+      </div>
+      <img
+        src="./img/arrow-down-circle.svg"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>BOOTSTRAP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI/UX</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-End Development and Programming Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git and GIT-HUB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/check2-circle.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LINUX and Bash Scripting</h3>
+                  <p>BASIC</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./img/arrow-down-circle.svg"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./img/mondrain_pic.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Mondrain Art</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/shariq740/mondrain'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://beautiful-dango-333d39.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./img/ani_cupid_pic.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ani-Cupid</h2>
+            <div class="btn-container">
+              <a  class="btn btn-color-2 project-btn" target="_blank" href='https://github.com/shariq740/Ani-Cupid'"> Github</a>  
+              <a class="btn btn-color-2 project-btn" target="_blank"  href="https://bespoke-swan-162634.netlify.app/"> Live Demo</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./img/cal_pic.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+
+            <h2 class="experience-sub-title project-title">CALCULATOR</h2>
+            <div class="btn-container">
+              
+              </button>
+              <a  class="btn btn-color-2 project-btn" target="_blank"='https://github.com/shariq740/CALCULATOR'"> Github</a>  
+              <a class="btn btn-color-2 project-btn" target="_blank" href='https://jocular-gumdrop-f2a985.netlify.app/'> Live Demo</a>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./img/arrow-down-circle.svg"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./img/envelope-at.svg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jojostand01@yahoo.com">jojostand01@yahoo.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./img/liinkdin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon linkdin-icon"
+          />
+          <p><a target="_blank" href="https://www.linkedin.com/in/mohd-shariq74/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 MOHD SHARIQ. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
